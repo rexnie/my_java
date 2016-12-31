@@ -12,6 +12,8 @@ public class PairTest1
       Pair<String> mm = ArrayAlg.minmax(words);
       System.out.println("min = " + mm.getFirst());
       System.out.println("max = " + mm.getSecond());
+
+      System.out.println("middle = " + ArrayAlg.getMiddle(words));
    }
 }
 
@@ -33,5 +35,14 @@ class ArrayAlg
          if (max.compareTo(a[i]) < 0) max = a[i];
       }
       return new Pair<String>(min, max);
+   }
+
+   /**
+    * 在普通类中定义范型方法，范型参数在方法修饰符和返回参数之间
+    * @param a
+    * @return
+    */
+   public static <T> T getMiddle(T[] a) {
+	   return a[a.length / 2];
    }
 }

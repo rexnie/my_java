@@ -16,7 +16,5 @@ public class Welcome
 
       for (String g : greeting)
          System.out.println(g);
-
-      System.out.println("rex here");
    }
 }

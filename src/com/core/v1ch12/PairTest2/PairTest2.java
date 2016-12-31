@@ -20,6 +20,11 @@ public class PairTest2
       Pair<GregorianCalendar> mm = ArrayAlg.minmax(birthdays);
       System.out.println("min = " + mm.getFirst().getTime());
       System.out.println("max = " + mm.getSecond().getTime());
+
+      Integer[] ages = { 15, 10, 20, 31, 22 };
+      Pair<Integer> ageMm = ArrayAlg.minmax(ages);
+      System.out.println("age min=" + ageMm.getFirst());
+      System.out.println("age max=" + ageMm.getSecond());
    }
 }
 
