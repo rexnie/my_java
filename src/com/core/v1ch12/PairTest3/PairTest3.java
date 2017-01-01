@@ -63,6 +63,12 @@ class PairAlg
       return p.getFirst() == null || p.getSecond() == null;
    }
 
+   /**
+    * swapHelper 实现了通配符的捕抓
+    * swapHelper是范型方法，而swap不是
+    * swapHelper的参数T虽然不知道是<?> 是什么类型的参数，但是是一个明确的类型
+    * @param p
+    */
    public static void swap(Pair<?> p) { swapHelper(p); }
 
    public static <T> void swapHelper(Pair<T> p)
