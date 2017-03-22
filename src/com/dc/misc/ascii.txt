@@ -1,0 +1,6 @@
+echo 255 > /sys/class/backlight/pwm-backlight.0/brightness
+while true
+do
+	echo 9000 > /sys/class/timed_output/vibrator/enable
+	sleep 10
+done
